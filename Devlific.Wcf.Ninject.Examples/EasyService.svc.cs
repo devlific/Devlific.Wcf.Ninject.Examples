@@ -4,7 +4,7 @@ using System.ServiceModel.Web;
 
 namespace Devlific.Wcf.Ninject.Examples
 {
-    [ServiceContract(Namespace = "Devlific.Wcf.IoC.Examples")]
+    [ServiceContract(Namespace = "Devlific.Wcf.Ninject.Examples")]
     //[ServiceContract()]
     public interface IEasyService
     {
