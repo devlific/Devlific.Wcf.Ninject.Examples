@@ -1,1 +1,1 @@
-﻿<%@ ServiceHost Language="C#" Debug="true" Service="Devlific.Wcf.IoC.Examples.EasyService2" CodeBehind="EasyService2.svc.cs" Factory="Ninject.Extensions.Wcf.NinjectWebServiceHostFactory" %>
+﻿<%@ ServiceHost Language="C#" Debug="true" Service="Devlific.Wcf.Ninject.Examples.EasyService2" CodeBehind="EasyService2.svc.cs" Factory="Ninject.Extensions.Wcf.NinjectWebServiceHostFactory" %>
