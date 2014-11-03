@@ -150,7 +150,7 @@ namespace Devlific.Wcf.Ninject.Examples
 }
 ```
 
-Finally in my Wcf classes I made note to specify the InstanceContextMode in my service behavior. From what I understand it is supposed to be per call but poking around in the source for Ninject.Extensions.Wcf I found that the mode was being discerned by the context, and so I rolled with that (thanks again to [scott-xu](https://github.com/scott-xu))
+In my Wcf classes I note to specify the InstanceContextMode in my service behavior. From what I understand it is supposed to be per call but poking around in the source for Ninject.Extensions.Wcf I found that the mode was being discerned by the context, and so I rolled with that (thanks again to [scott-xu](https://github.com/scott-xu))
 
 InstanceContextMode switching
 ```c#
@@ -231,7 +231,13 @@ Wcf Implementation
     }
 ```
 
+And on my .svc file I modify to point at the Ninject Wcf Extensions custom service host factory
+```xml
+﻿<%@ ServiceHost Language="C#" Debug="true" Service="Devlific.Wcf.IoC.Examples.EasyService3" CodeBehind="EasyService3.svc.cs" Factory="Ninject.Extensions.Wcf.NinjectWebServiceHostFactory" %>
+```
+
 That's it. I now have a working Wcf 4 and Ninject 3 example using both 'GET', and 'POST'. Hopefully this has been helpful for you, it sure has been for me. As we all know Wcf can sometime be a pain in the ascii.
 
 Cheers,
-Devlific
+
+Sean Fox (a.k.a. devlific)
