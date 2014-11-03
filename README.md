@@ -3,7 +3,7 @@ Wcf 4 and Ninject 3 is a pretty sweet combination, but geting bootstrapped with 
 ######Pre-Requisites
 
 1. You've spent at least 3 hours trying to bootstrap Wcf 4 and Ninject 3
-2. Have sifted through at least 3 hours of countless articles only to produce a 400's (Bad Request) or 500 (KaBomb) status's with informative but inactionable messages presented to you
+2. Have sifted through at least 3 hours of countless articles only to produce 400's (Bad Request) or 500 (KaBomb) status's with informative but inactionable messages presented to you
 3. Just wish there was on place where you could frikon see a working fundamental example and be spared the misery
 
 ## Brief background on Wcf 4 and json
