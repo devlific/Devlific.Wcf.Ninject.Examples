@@ -7,7 +7,7 @@ using Devlific.Wcf.Ninject.Examples.Models;
 
 namespace Devlific.Wcf.Ninject.Examples
 {
-    [ServiceContract(Namespace = "Devlific.Wcf.IoC.Examples")]
+    [ServiceContract(Namespace = "Devlific.Wcf.Ninject.Examples")]
     public interface IEasyService3
     {
         [WebInvoke(Method = "POST")]
