@@ -64,7 +64,7 @@ What you'll need
 3. To enable auto-registration for Ninject with assembly scanning you'll need the convention extension for Ninject located [here](https://github.com/ninject/ninject.extensions.conventions), thanks also to [scott-xu](https://github.com/scott-xu)
 4. An Asp.Net application with some Wcf services going
 
-## BootStrap
+## Bootstrap
 
 So in this effort I wanted to be able to test my services using
 
