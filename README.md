@@ -6,7 +6,7 @@ Wcf 4 and Ninject 3 is a pretty sweet combination, but geting bootstrapped with 
 2. Have sifted through at least 3 hours of countless articles only to produce 400's (Bad Request) or 500 (KaBomb) status's with informative but inactionable messages presented to you
 3. Just wish there was on place where you could frikon see a working fundamental example and be spared the misery
 
-## Brief background on Wcf 4 and json
+## Brief background on Wcf 4 and JSON
 
 I'm a fan of minimal configuration, and in Wcf 4 it's pretty simple to set up a service to respond to and accept json requests. Wcf services can also be served up over port 80 alongside your web application, instead of having to be hosted. Here's what that configuration looks like:
 
