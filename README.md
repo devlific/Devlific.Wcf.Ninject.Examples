@@ -39,7 +39,7 @@ On the operation contract we add the json formatting instructions via WebInvoke
 	ResponseFormat = WebMessageFormat.Json)]
 ```
 
-Lastly, we have an attribute insttruction stating that it's ok to serve up this service alongside an asp.net application over the same port
+Lastly, we have an attribute instruction stating that it's ok to serve up this service alongside an asp.net application over the same port
 ```c#
 [AspNetCompatibilityRequirements(RequirementsMode = AspNetCompatibilityRequirementsMode.Allowed)]
 public class EasyService : IEasyService...
@@ -55,7 +55,7 @@ I tried bootstrapping both StructureMap and Ninject with Wcf the minimal configu
 
 1. There must be some configuration in the web.config's serviceModel element describing the service's endpoint, the behavior, and binding. This is because the Ninject.Extensions.Wcf's custom web service host factory need's to be able loop through stated endpoints to attach it's functonality and basically tell Wcf to use Ninject to perform dependency resolution.
 2. The endpoints must implement "webHttpBinding", to enable exposure over http (this is key), instead of soap
-3. Using "webHttpBinding" elminates the need to specify a BodyStyle, RequestFormat, and ResponseFormat 
+3. Using "webHttpBinding" you aren't required to specify a BodyStyle, RequestFormat, and ResponseFormat, but it's still a good idea. By default it will return xml.
 
 What you'll need
 
