@@ -1,4 +1,4 @@
-Wcf 4 and Ninject 3 is a pretty sweet combination, but geting bootstrapped with it can be a tricky experience...maybe that's an understatement. Hopefully this will help.
+Wcf 4 and Ninject 3 is a pretty sweet combination, but getting bootstrapped with it can be a tricky experience...maybe that's an understatement. Hopefully this will help.
 
 ######Pre-Requisites
 
